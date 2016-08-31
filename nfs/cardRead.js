@@ -73,6 +73,7 @@ PCSC.on('reader', function(reader) {
                                 console.log('Status(', reader.name, '): Read:', data, ' toString:', lastRead);
 
 																// Send request to PARSE
+                                // TEST
 																checkUserRfidID(lastRead);
                             }
                         });
