@@ -74,7 +74,7 @@ PCSC.on('reader', function(reader) {
 
 																// Send request to PARSE
                                 // TEST
-																checkUserRfidID(lastRead);
+															
                             }
                         });
                     }
