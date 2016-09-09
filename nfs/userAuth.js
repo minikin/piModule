@@ -12,6 +12,9 @@ var checkUserRfidID = function (rfidID) {
 						console.log("ATTENSION WE CAN'T FIND USER!");
 					} else {
 						console.log("WELCOME", employee.get("employeeName"),"ENJOY YOUR COFFEE!");
+							Parse.Cloud.run("coffeeMaker").then(function(data) {
+									console.log('DATA FROM SERVER:', data);
+							});
 					}
 		  },
 		  error: function(error) {
